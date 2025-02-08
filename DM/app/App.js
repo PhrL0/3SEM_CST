@@ -8,35 +8,30 @@ import {
   ScrollView,
   StyleSheet,
 } from 'react-native';
-import { Header } from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
   const [text, setText] = useState('');
 
   return (
     <ScrollView style={styles.container}>
-      <view style={styles.header}>
-        <text style={styles.title}>Meu App Expo</text>
-      </view>
+      <View style={styles.header}>
+        <Text style={styles.title}>Meu App Expo</Text>
+      </View>
 
-      <Image
-        source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
-        style={styles.image}
-      ></Image>
+      <View style={styles.container}>
+        <Image source={require('./images.jpg')} style={styles.image} />
+      </View>
 
       <TextInput
         style={styles.input}
         placeholder="Digite algo"
         value={text}
         onChangeText={setText}
-      ></TextInput>
+      />
 
       <Text style={styles.textOutput}>Você digitou: {text}</Text>
 
-      <Button
-        title="Pressione-me"
-        onPress={() => alert('Botão pressionado')}
-      ></Button>
+      <Button title="Pressione-me" onPress={() => alert('Botão pressionado')} />
     </ScrollView>
   );
 }
@@ -59,8 +54,8 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   image: {
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
     alignSelf: 'center',
     marginVertical: 20,
   },
