@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoramento Industrial</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      :root {
+        --primary-color: #2a5c82;
+        --secondary-color: #5e9cd3;
+        --success-color: #28a745;
+        --danger-color: #dc3545;
+        --text-color: #333;
+        --background-light: #f8f9fa;
+        --border-radius: 8px;
+        --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      body {
+        font-family: "Segoe UI", system-ui, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-light);
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+      }
+
+      h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        border-bottom: 3px solid var(--secondary-color);
+        padding-bottom: 0.5rem;
+        display: inline-block;
+      }
+
+      .sensor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .sensor-card {
+        background: var(--background-light);
+        padding: 1.5rem;
+        border-radius: var(--border-radius);
+        border-left: 4px solid var(--secondary-color);
+        transition: transform 0.2s ease;
+      }
+
+      .sensor-card:hover {
+        transform: translateY(-3px);
+      }
+
+      .sensor-card strong {
+        display: block;
+        font-size: 1.1rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .sensor-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-color);
+      }
+
+      .unit {
+        font-size: 1rem;
+        color: #666;
+        margin-left: 0.3rem;
+      }
+
+      .chart-container {
+        position: relative;
+        margin: 2rem 0;
+        padding: 1rem;
+        background: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+      }
+
+      #sensorChart {
+        max-height: 400px;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .button-group {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      .button {
+        padding: 12px 24px;
+        border: none;
+        border-radius: var(--border-radius);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .button:focus {
+        outline: 3px solid rgba(94, 156, 211, 0.3);
+      }
+
+      .iniciar {
+        background-color: var(--success-color);
+        color: white;
+      }
+
+      .iniciar:hover {
+        background-color: #218838;
+        transform: translateY(-1px);
+      }
+
+      .pause {
+        background-color: var(--danger-color);
+        color: white;
+      }
+
+      .pause:hover {
+        background-color: #c82333;
+        transform: translateY(-1px);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .sensor-value {
+          font-size: 1.4rem;
+        }
+
+        .button {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .button-group {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Monitoramento de Sensores</h1>
+
+      <div class="sensor-grid">
+        <div class="sensor-card">
+          <strong>Temperatura</strong>
+          <span class="sensor-value" id="temp">--</span
+          ><span class="unit">°C</span>
+          <strong>Umidade</strong>
+          <span class="sensor-value" id="hum">--</span
+          ><span class="unit">%</span>
+          <strong>Pressão</strong>
+          <span class="sensor-value" id="pres">--</span
+          ><span class="unit">hPa</span>
+          <strong>Corrente</strong>
+          <span class="sensor-value" id="corrente">--</span
+          ><span class="unit">A</span>
+          <strong>Tensão</strong>
+          <span class="sensor-value" id="tensao">--</span
+          ><span class="unit">V</span>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="sensorChart"></canvas>
+      </div>
+
+      <div class="button-group">
+        <button id="pause" class="button pause" onclick="pause()">
+          ⏸ Pausar
+        </button>
+        <button id="iniciar" class="button iniciar" onclick="iniciar()">
+          ▶ Iniciar
+        </button>
+      </div>
+    </div>
+    <script>
+      const ctx = document.getElementById("sensorChart").getContext("2d");
+
+      //Cria um grafico de linha usando o Charts.js
+      const chart = new Chart(ctx, {
+        type: "line", //Define o tipo de grafico como linha
+        data: {
+          labels: [], // Inicialmente, não há rotulos no eixo X(será preenchido com timestamps)
+          datasets: [
+            {
+              label: "Temperatura (°C)",
+              data: [],
+              borderColor: "red",
+              fill: false,
+            },
+            {
+              label: "Umidade (%)",
+              data: [],
+              borderColor: "blue",
+              fill: false,
+            },
+            {
+              label: "Pressão (hPa)",
+              data: [],
+              borderColor: "green",
+              fill: false,
+            },
+            {
+              label: "Corrente (A)",
+              data: [],
+              borderColor: "gray",
+              fill: false,
+            },
+            {
+              label: "Tensão (V)",
+              data: [],
+              borderColor: "yellow",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: { title: { display: true, text: "Tempo" } },
+          },
+        },
+      });
+
+      async function atualizaSensores() {
+        try {
+          const response = await fetch("http://127.0.0.1:5000/sensores");
+
+          const data = await response.json();
+          console.log(data);
+          document.getElementById("temp").innerText = data.temperatura;
+          document.getElementById("hum").innerText = data.umidade;
+          document.getElementById("pres").innerText = data.pressao;
+          document.getElementById("corrente").innerText = data.corrente;
+          document.getElementById("tensao").innerText = data.tensao;
+
+          if (data.estado == "Critico") {
+            Swal.fire({
+              title: "Anomalia Detectada",
+              text: "Cuidado o sistema por estar sofrendo pane",
+              icon: "warning",
+            });
+          }
+
+          const now = new Date().toLocaleTimeString();
+
+          chart.data.labels.push(now);
+          chart.data.datasets[0].data.push(data.temperatura);
+          chart.data.datasets[1].data.push(data.umidade);
+          chart.data.datasets[2].data.push(data.pressao);
+          chart.data.datasets[3].data.push(data.corrente);
+          chart.data.datasets[4].data.push(data.tensao);
+
+          if (chart.data.labels.length > 10) {
+            chart.data.labels.shift();
+            chart.data.datasets.forEach((dataset) => {
+              dataset.data.shift();
+            });
+          }
+
+          chart.update();
+        } catch (error) {
+          console.error("Erro aos buscar dados:", error);
+        }
+      }
+      let intervalo;
+      let flag;
+      document.getElementById("pause").addEventListener("click", function () {
+        flag = true;
+      });
+
+      function pause(flag) {
+        if (flag) {
+          clearInterval(intervalo);
+          console.log("Intervalo pausado.");
+        }
+      }
+      function iniciar() {
+        intervalo = setInterval(() => {
+          atualizaSensores();
+          pause(flag);
+        }, 2000);
+        flag = false;
+      }
+    </script>
+  </body>
+</html>
