@@ -1,0 +1,10 @@
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\bin\Debug\EX_01.exe.config
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\bin\Debug\EX_01.exe
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\bin\Debug\EX_01.pdb
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.Form1.resources
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.Properties.Resources.resources
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.exe
+C:\Users\Aluno\Desktop\3SEM_CST\IFACI\C#\Aul01\EX_01\obj\Debug\EX_01.pdb
