@@ -1,0 +1,10 @@
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\bin\Debug\Exercicio_02_Tony.exe.config
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\bin\Debug\Exercicio_02_Tony.exe
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\bin\Debug\Exercicio_02_Tony.pdb
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.csproj.AssemblyReference.cache
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.Form1.resources
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.Properties.Resources.resources
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.csproj.GenerateResource.cache
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.exe
+C:\Users\Aluno\3SEM_CST\IFACI\C#\Aula02\Exercicio_02_Tony\obj\Debug\Exercicio_02_Tony.pdb
