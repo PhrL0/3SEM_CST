@@ -1,0 +1,10 @@
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\bin\Debug\EX_CONTROLE_RUA_AVENIDA.exe.config
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\bin\Debug\EX_CONTROLE_RUA_AVENIDA.exe
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\bin\Debug\EX_CONTROLE_RUA_AVENIDA.pdb
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.Form1.resources
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.Properties.Resources.resources
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.exe
+C:\Users\Aluno\source\repos\EX_CONTROLE_RUA_AVENIDA\obj\Debug\EX_CONTROLE_RUA_AVENIDA.pdb

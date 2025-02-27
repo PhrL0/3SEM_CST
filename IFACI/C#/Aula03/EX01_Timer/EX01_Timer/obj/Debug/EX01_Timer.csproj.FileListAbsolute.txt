@@ -1,0 +1,10 @@
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\bin\Debug\EX01_Timer.exe.config
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\bin\Debug\EX01_Timer.exe
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\bin\Debug\EX01_Timer.pdb
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.Form1.resources
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.Properties.Resources.resources
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.exe
+C:\Users\Aluno\source\repos\EX01_Timer\EX01_Timer\obj\Debug\EX01_Timer.pdb

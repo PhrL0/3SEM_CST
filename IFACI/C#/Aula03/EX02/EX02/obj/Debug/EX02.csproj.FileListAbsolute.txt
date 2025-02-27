@@ -1,0 +1,10 @@
+C:\Users\Aluno\source\repos\EX02\EX02\bin\Debug\EX02.exe.config
+C:\Users\Aluno\source\repos\EX02\EX02\bin\Debug\EX02.exe
+C:\Users\Aluno\source\repos\EX02\EX02\bin\Debug\EX02.pdb
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.Pisca.resources
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.Properties.Resources.resources
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.exe
+C:\Users\Aluno\source\repos\EX02\EX02\obj\Debug\EX02.pdb
