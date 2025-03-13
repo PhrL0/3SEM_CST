@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Aluno\\source\\repos\\EX01_Timer\\",
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|c:\\users\\aluno\\source\\repos\\ex01_timer\\ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|c:\\users\\aluno\\desktop\\3sem_cst\\ifaci\\c#\\aula03\\ex01_timer\\ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|solutionrelative:ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|c:\\users\\aluno\\source\\repos\\ex01_timer\\ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{202514AC-BC7F-4AC7-983A-4A89D71008CC}|EX01_Timer\\EX01_Timer.csproj|solutionrelative:ex01_timer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\source\\repos\\EX01_Timer\\EX01_Timer\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\EX01_Timer\\Form1.cs",
               "RelativeDocumentMoniker": "EX01_Timer\\Form1.cs",
-              "ToolTip": "C:\\Users\\Aluno\\source\\repos\\EX01_Timer\\EX01_Timer\\Form1.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\EX01_Timer\\Form1.cs",
               "RelativeToolTip": "EX01_Timer\\Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -37,9 +37,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Aluno\\source\\repos\\EX01_Timer\\EX01_Timer\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\EX01_Timer\\Form1.cs",
               "RelativeDocumentMoniker": "EX01_Timer\\Form1.cs",
-              "ToolTip": "C:\\Users\\Aluno\\source\\repos\\EX01_Timer\\EX01_Timer\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\3SEM_CST\\IFACI\\C#\\Aula03\\EX01_Timer\\EX01_Timer\\Form1.cs [Design]",
               "RelativeToolTip": "EX01_Timer\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T21:42:54.916Z",
