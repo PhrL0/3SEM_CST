@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel= "stylesheet" href="../static/style.css"
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-brand">
+        <i class="fas fa-rocket"></i>
+        TechSolutions
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Login</a>
+        <a href="#" class="nav-link">Suporte</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="login-card">
+        <div class="form-title">
+          <h1>Criar nova conta</h1>
+          <p>Preencha os campos para se registrar</p>
+        </div>
+
+        <form id="registerForm" novalidate>
+          <div class="input-group">
+            <label class="input-label" for="name">Nome Completo</label>
+            <input
+              type="text"
+              id="name"
+              class="form-input"
+              placeholder="Digite seu nome completo"
+              required
+              minlength="3"
+              aria-describedby="nameError"
+            />
+            <div id="nameError" class="error-message" role="alert"></div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              class="form-input"
+              placeholder="exemplo@email.com"
+              required
+              aria-describedby="emailError"
+            />
+            <div id="emailError" class="error-message" role="alert"></div>
+          </div>
+
+          <button type="submit" class="submit-btn">Cadastrar</button>
+        </form>
+
+        <div class="social-login">
+          <p>Já tem uma conta? <a href="/login">Faça login</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>TechSolutions</h3>
+          <p>Transformando ideias em realidade digital</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="#" class="footer-link">Termos de Serviço</a></li>
+            <li><a href="#" class="footer-link">Documentação</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:suporte@tech.com" class="footer-link"
+                >suporte@tech.com</a
+              >
+            </li>
+            <li><a href="#" class="footer-link">(11) 99999-9999</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../static/style.css"></script>
+  </body>
+</html>
