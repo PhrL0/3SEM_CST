@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "expo": "^52.0.40",
-    "expo-cli": "^6.3.10"
+    "expo-cli": "^6.3.10",
+    "expo-location": "^18.1.5"
   }
 }
